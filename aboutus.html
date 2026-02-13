@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kelompok Wisata Eropa</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdfaf6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .about-card {
+            background: #1c1c1c; /* Tema Gelap Eksklusif */
+            color: white;
+            max-width: 600px;
+            width: 90%;
+            padding: 50px 40px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            border-bottom: 6px solid #c5a059; /* Aksen Emas */
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Dekorasi Lingkaran di Background */
+        .about-card::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: rgba(197, 160, 89, 0.1);
+            border-radius: 50%;
+        }
+
+        .about-card h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #c5a059;
+            margin-bottom: 10px;
+        }
+
+        .about-card p {
+            font-weight: 300;
+            color: #bdc3c7;
+            margin-bottom: 35px;
+            letter-spacing: 1px;
+        }
+
+        .team-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .member-name {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 15px;
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            font-weight: 400;
+            transition: 0.3s;
+            cursor: default;
+        }
+
+        .member-name:hover {
+            background: rgba(197, 160, 89, 0.2);
+            transform: scale(1.02);
+            border-color: #c5a059;
+        }
+
+        .footer-note {
+            margin-top: 40px;
+            font-size: 0.75rem;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about-card">
+        <h2>About Us</h2>
+        <p>Proyek ini dikembangkan dengan dedikasi oleh Kelompok Wisata Eropa:</p>
+
+        <div class="team-container">
+            <div class="member-name">Darius Artha Wijaya</div>
+            <div class="member-name">Kayla Daniella Tedjo</div>
+            <div class="member-name">Jeremy Lemuel Budhijuwono</div>
+            <div class="member-name">Lyvia Carolim</div>
+            <div class="member-name">Theresa Erin</div>
+        </div>
+
+        <div class="footer-note">
+            &copy; 2026 Kelas Sejarah Dunia
+        </div>
+    </div>
+
+</body>
+</html>
